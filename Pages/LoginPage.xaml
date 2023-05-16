@@ -1,0 +1,38 @@
+﻿<Window x:Class="MusicAppWPF.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MusicAppWPF"
+        mc:Ignorable="d"
+        Title="Вход" Height="450" Width="800">
+    <Grid Background="{StaticResource background}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <TextBlock Style="{StaticResource Title}" Text="Вход" Grid.Column="1" Margin="0,0,0,15" HorizontalAlignment="Center" VerticalAlignment="Bottom" />
+        <StackPanel Grid.Row="1" Grid.Column="1" Margin="10, 0, 10, 0">
+            <TextBox x:Name="login" Text="Логин" Style="{StaticResource inputEffect}" Template="{StaticResource TextBoxTemp}" Margin="0,0,0,10" />
+            <PasswordBox x:Name="password" Style="{StaticResource passEffect}" Template="{StaticResource PassBoxTemp}" Margin="0,0,0,10" />
+            <Button x:Name="auth" Content="Войти" Style="{StaticResource btn}" Click="auth_Click" Height="25" Margin="0,0,0,10" />
+            <Button x:Name="back" Content="Назад" Style="{StaticResource btn}" Click="back_Click" Height="25" />
+        </StackPanel>
+        <Image Source="/Images/melody.png" Grid.Column="2" Grid.Row="2" Margin="103,36,-103,-36" RenderTransformOrigin="0.5,0.5" >
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-18.629"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+    </Grid>
+</Window>

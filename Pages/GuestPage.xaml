@@ -1,0 +1,41 @@
+﻿<Window x:Class="MusicAppWPF.GuestPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MusicAppWPF"
+        mc:Ignorable="d"
+        Title="Гостевая страница" Height="450" Width="800">
+    <Grid Background="{StaticResource background}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="53*" />
+            <RowDefinition Height="313*" />
+            <RowDefinition Height="53*" />
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="25*" />
+                <ColumnDefinition Width="239*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <TextBlock Text="Попробуйте тестовые песни" Style="{StaticResource Title}"  Grid.Column="1" Height="46" VerticalAlignment="Center" HorizontalAlignment="Center" />
+            <Button Content="Назад" Style="{StaticResource transperetButton}" Click="Button_Click">
+
+            </Button>
+        </Grid>
+        <ScrollViewer Grid.Row="1">
+            <StackPanel>
+                <StackPanel>
+                    <StackPanel>
+                        <Image Source="/MusicAssets/Images/1.png" />
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>

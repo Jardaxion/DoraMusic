@@ -1,0 +1,22 @@
+C:\lazarus\MusicAppWPF\obj\Debug\MusicAppWPF.csprojAssemblyReference.cache
+C:\lazarus\MusicAppWPF\obj\Debug\App.g.cs
+C:\lazarus\MusicAppWPF\obj\Debug\App.baml
+C:\lazarus\MusicAppWPF\obj\Debug\MusicAppWPF.Properties.Resources.resources
+C:\lazarus\MusicAppWPF\obj\Debug\MusicAppWPF.csproj.GenerateResource.cache
+C:\lazarus\MusicAppWPF\obj\Debug\MusicAppWPF.csproj.CoreCompileInputs.cache
+C:\lazarus\MusicAppWPF\obj\Debug\Pages\LoginPage.g.cs
+C:\lazarus\MusicAppWPF\bin\Debug\Dora Music.exe.config
+C:\lazarus\MusicAppWPF\bin\Debug\Dora Music.exe
+C:\lazarus\MusicAppWPF\bin\Debug\Dora Music.pdb
+C:\lazarus\MusicAppWPF\obj\Debug\Dora Music_MarkupCompile.cache
+C:\lazarus\MusicAppWPF\obj\Debug\Dora Music_MarkupCompile.lref
+C:\lazarus\MusicAppWPF\obj\Debug\Pages\LoginPage.baml
+C:\lazarus\MusicAppWPF\obj\Debug\Dora Music.g.resources
+C:\lazarus\MusicAppWPF\obj\Debug\Dora Music.exe
+C:\lazarus\MusicAppWPF\obj\Debug\Dora Music.pdb
+C:\lazarus\MusicAppWPF\obj\Debug\MainWindow.g.cs
+C:\lazarus\MusicAppWPF\obj\Debug\MainWindow.baml
+C:\lazarus\MusicAppWPF\obj\Debug\Pages\RegPage.g.cs
+C:\lazarus\MusicAppWPF\obj\Debug\Pages\RegPage.baml
+C:\lazarus\MusicAppWPF\obj\Debug\Pages\GuestPage.g.cs
+C:\lazarus\MusicAppWPF\obj\Debug\Pages\GuestPage.baml
