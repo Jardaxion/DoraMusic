@@ -21,7 +21,7 @@
         <StackPanel Grid.Row="1" Grid.Column="1" Margin="10,0,10,0">
             <TextBox Template="{StaticResource TextBoxTemp}" Style="{StaticResource inputEffect}" x:Name="login" Text="Логин" Margin="0,0,0,10" />
             <PasswordBox Template="{StaticResource PassBoxTemp}" Style="{StaticResource passEffect}" x:Name="password" Margin="0,0,0,10" />
-            <ComboBox BorderBrush="Pink" Background="White" Foreground="Black" Margin="0,0,0,10" SelectedIndex="0">
+            <ComboBox x:Name="typeUser" BorderBrush="Pink" Background="White" Foreground="Black" Margin="0,0,0,10" SelectedIndex="0">
                 <ComboBoxItem BorderBrush="Pink" Background="White" Foreground="Black">Пользователь</ComboBoxItem>
                 <ComboBoxItem BorderBrush="Pink" Background="White" Foreground="Black">Артист</ComboBoxItem>
             </ComboBox>

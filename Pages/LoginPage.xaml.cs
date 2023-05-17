@@ -26,7 +26,38 @@ namespace MusicAppWPF
 
         private void auth_Click(object sender, RoutedEventArgs e)
         {
+            if(login.Text != "" && password.Password != "")
+            {
+                semyonMusicEntities context = new semyonMusicEntities();
+                bool valid = false;
+                using (context)
+                {
+                    var usersArray = context.users;
+                    foreach(users user in usersArray)
+                    {
+                        if(user.login == login.Text && user.password == password.Password)
+                        {
+                            valid = true;
 
+                            User.login = user.login;
+                            User.id = user.id;
+                        }
+                    }
+
+                    if (valid)
+                    {
+                        ProfilePage profile = new ProfilePage();
+                        profile.Show();
+                        this.Close();
+                    } else
+                    {
+                        MessageBox.Show("Логин или пароль введены не верно");
+                    }
+                }
+            } else
+            {
+                MessageBox.Show("Вы не заполнили данные!");
+            }
         }
 
         private void back_Click(object sender, RoutedEventArgs e)

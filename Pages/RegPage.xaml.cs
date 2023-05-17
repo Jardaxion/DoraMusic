@@ -26,15 +26,52 @@ namespace MusicAppWPF
 
         private void Reg_Click(object sender, RoutedEventArgs e)
         {
-            if(login.Text != "" && password.Password != "")
+            if (login.Text != "" && password.Password != "")
             {
-                
-            } else
-            {
-                MessageBox.Show("Вы заполнели не все данные");
-            }
-        }
+                semyonMusicEntities context = new semyonMusicEntities();
+                bool valid = true;
+                using (context)
+                {
+                    var usersArray = context.users;
+                    foreach (users user in usersArray)
+                    {
+                        if (user.login == login.Text)
+                        {
+                            valid = false;
+                            break;
+                        }
+                    }
 
+                    if (valid)
+                    {
+                        users user = new users();
+                        int userId = (from us in context.users select us.id).Max();
+
+                        user.id = userId + 1;
+                        user.login = login.Text;
+                        user.password = password.Password;
+                        user.type = typeUser.SelectedIndex;
+                        context.users.Add(user);
+                        context.SaveChanges();
+
+                        MessageBox.Show("Вы успешно зарегистрировались!");
+
+                        Window1 loginPage = new Window1();
+                        loginPage.Show();
+                        this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Деибл, логин занят!!!");
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Вы заполнили не все данные");
+            }
+
+        }
         private void Back_Click(object sender, RoutedEventArgs e)
         {
             MainWindow main = new MainWindow();

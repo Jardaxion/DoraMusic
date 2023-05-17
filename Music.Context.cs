@@ -13,10 +13,10 @@ namespace MusicAppWPF
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class semyonMusic : DbContext
+    public partial class semyonMusicEntities : DbContext
     {
-        public semyonMusic()
-            : base("name=semyonMusic")
+        public semyonMusicEntities()
+            : base("name=semyonMusicEntities")
         {
         }
     
@@ -29,6 +29,7 @@ namespace MusicAppWPF
         public virtual DbSet<category> category { get; set; }
         public virtual DbSet<music> music { get; set; }
         public virtual DbSet<playlist> playlist { get; set; }
+        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<type> type { get; set; }
         public virtual DbSet<users> users { get; set; }
     }

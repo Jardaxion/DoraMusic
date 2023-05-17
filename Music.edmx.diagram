@@ -4,11 +4,12 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="298fa397d9924f91a93c192612ed53a0" Name="Diagram1">
+      <Diagram DiagramId="c946a98d3b7b4eb29b58f726b5d0de86" Name="Diagram1">
         <EntityTypeShape EntityType="semyonMusicModel.admin" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
         <EntityTypeShape EntityType="semyonMusicModel.category" Width="1.5" PointX="2.75" PointY="6.75" IsExpanded="true" />
         <EntityTypeShape EntityType="semyonMusicModel.music" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="semyonMusicModel.playlist" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="semyonMusicModel.sysdiagrams" Width="1.5" PointX="4.75" PointY="6.75" IsExpanded="true" />
         <EntityTypeShape EntityType="semyonMusicModel.type" Width="1.5" PointX="0.75" PointY="2.5" IsExpanded="true" />
         <EntityTypeShape EntityType="semyonMusicModel.users" Width="1.5" PointX="3" PointY="2.125" IsExpanded="true" />
         <AssociationConnector Association="semyonMusicModel.FK__music__user_id__300424B4" ManuallyRouted="false" />

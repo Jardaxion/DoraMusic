@@ -20,3 +20,15 @@ C:\lazarus\MusicAppWPF\obj\Debug\Pages\RegPage.g.cs
 C:\lazarus\MusicAppWPF\obj\Debug\Pages\RegPage.baml
 C:\lazarus\MusicAppWPF\obj\Debug\Pages\GuestPage.g.cs
 C:\lazarus\MusicAppWPF\obj\Debug\Pages\GuestPage.baml
+C:\lazarus\MusicAppWPF\obj\Debug\Dora Music_Content.g.cs
+C:\lazarus\MusicAppWPF\bin\Debug\EntityFramework.dll
+C:\lazarus\MusicAppWPF\bin\Debug\EntityFramework.SqlServer.dll
+C:\lazarus\MusicAppWPF\bin\Debug\EntityFramework.xml
+C:\lazarus\MusicAppWPF\bin\Debug\EntityFramework.SqlServer.xml
+C:\lazarus\MusicAppWPF\bin\Debug\ru\EntityFramework.resources.dll
+C:\lazarus\MusicAppWPF\obj\Debug\MusicAppWPF.csproj.CopyComplete
+C:\lazarus\MusicAppWPF\obj\Debug\Pages\ProfilePage.g.cs
+C:\lazarus\MusicAppWPF\obj\Debug\Pages\ProfilePage.baml
+C:\lazarus\MusicAppWPF\bin\Debug\Newtonsoft.Json.dll
+C:\lazarus\MusicAppWPF\bin\Debug\Newtonsoft.Json.xml
+C:\lazarus\MusicAppWPF\bin\Debug\ru\EntityFramework.SqlServer.resources.dll

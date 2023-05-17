@@ -44,6 +44,9 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
@@ -67,15 +70,29 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="admin.cs">
+      <DependentUpon>Music.tt</DependentUpon>
+    </Compile>
+    <Compile Include="category.cs">
+      <DependentUpon>Music.tt</DependentUpon>
+    </Compile>
     <Compile Include="Music.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Music.Context.tt</DependentUpon>
     </Compile>
+    <Compile Include="music.cs">
+      <DependentUpon>Music.tt</DependentUpon>
+    </Compile>
     <Compile Include="Music.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Music.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Music2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Music.tt</DependentUpon>
     </Compile>
     <Compile Include="Pages\GuestPage.xaml.cs">
       <DependentUpon>GuestPage.xaml</DependentUpon>
@@ -85,6 +102,23 @@
     </Compile>
     <Compile Include="Pages\RegPage.xaml.cs">
       <DependentUpon>RegPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="playlist.cs">
+      <DependentUpon>Music.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ProfilePage.xaml.cs">
+      <DependentUpon>ProfilePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagrams.cs">
+      <DependentUpon>Music.tt</DependentUpon>
+    </Compile>
+    <Compile Include="type.cs">
+      <DependentUpon>Music.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\User.cs" />
+    <Compile Include="Classes\UserJson.cs" />
+    <Compile Include="users.cs">
+      <DependentUpon>Music.tt</DependentUpon>
     </Compile>
     <Page Include="Pages\GuestPage.xaml">
       <SubType>Designer</SubType>
@@ -107,6 +141,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\RegPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ProfilePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -133,6 +171,7 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Music.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="globalData.json" />
     <None Include="Music.edmx.diagram">
       <DependentUpon>Music.edmx</DependentUpon>
     </None>
@@ -162,13 +201,19 @@
     <Folder Include="MusicAssets\Images\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Music.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Music.Context.cs</LastGenOutput>
-    </Content>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Content Include="Music.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Music.edmx</DependentUpon>
+      <LastGenOutput>Music.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Music.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Music.edmx</DependentUpon>
+      <LastGenOutput>Music2.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
