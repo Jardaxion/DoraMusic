@@ -1,0 +1,25 @@
+﻿<Window x:Class="MusicAppWPF.AdminPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MusicAppWPF"
+        mc:Ignorable="d"
+        Title="Админка" Height="450" Width="800">
+    <Grid Background="{StaticResource background}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="145*" />
+            <ColumnDefinition Width="502*" />
+            <ColumnDefinition Width="153*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="57*" />
+            <RowDefinition Height="377*" />
+        </Grid.RowDefinitions>
+        <Button Click="back_Click" x:Name="back" Content="Выйти" Style="{StaticResource transperetButton}" />
+        <TextBlock Text="Администраторская панель" Style="{StaticResource Text}" FontSize="24" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Button Content="Добавить песню" Name="add" Click="add_Click" Style="{StaticResource btn}" Grid.Column="1" Grid.Row="1" Height="25" VerticalAlignment="Top" />
+        <Button Content="Удалить песню" Name="remove" Click="remove_Click" Style="{StaticResource btn}" Grid.Column="1" Grid.Row="1" Height="25" VerticalAlignment="Top" Margin="0,38,0,0" />
+        <Button Content="Посмотреть все песни" Name="showAll" Click="showAll_Click" Style="{StaticResource btn}" Grid.Column="1" Grid.Row="1" Height="25" VerticalAlignment="Top" Margin="0,76,0,0" />
+    </Grid>
+</Window>

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\lazarus\MusicAppWPF\obj\Debug\
+C:\Users\deka-\Desktop\dora\obj\Debug\
 MusicAppWPF
 none
 false
 DEBUG;TRACE
-C:\lazarus\MusicAppWPF\App.xaml
-5-1181984167
-2292022134
-21173381921
-19500789152
-Pages\GuestPage.xaml;MainWindow.xaml;Pages\LoginPage.xaml;Pages\RegPage.xaml;Pages\ProfilePage.xaml;
+C:\Users\deka-\Desktop\dora\App.xaml
+101839803815
+22135919089
+27-295683157
+191049788123
+Pages\AddSongPage.xaml;Pages\AdminPage.xaml;Pages\AllMusicPage.xaml;MainWindow.xaml;Pages\LoginPage.xaml;Pages\RegPage.xaml;Pages\ProfilePage.xaml;Pages\SettingsPage.xaml;Pages\RemoveSongPage.xaml;ShowAllMusicsPage.xaml;
 
-False
+True
 

@@ -32,5 +32,12 @@ namespace MusicAppWPF
             main.Show();
             this.Close();
         }
+
+        private void allMusic_Click(object sender, RoutedEventArgs e)
+        {
+            AllMusicPage allMusicPage = new AllMusicPage();
+            allMusicPage.Show();
+            this.Close();
+        }
     }
 }

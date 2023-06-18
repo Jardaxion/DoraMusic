@@ -70,8 +70,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Pages\AddSongPage.xaml.cs">
+      <DependentUpon>AddSongPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="admin.cs">
       <DependentUpon>Music.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminPage.xaml.cs">
+      <DependentUpon>AdminPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AllMusicPage.xaml.cs">
+      <DependentUpon>AllMusicPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="category.cs">
       <DependentUpon>Music.tt</DependentUpon>
@@ -94,9 +103,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Music.tt</DependentUpon>
     </Compile>
-    <Compile Include="Pages\GuestPage.xaml.cs">
-      <DependentUpon>GuestPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Pages\LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
     </Compile>
@@ -109,6 +115,15 @@
     <Compile Include="Pages\ProfilePage.xaml.cs">
       <DependentUpon>ProfilePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\SettingsPage.xaml.cs">
+      <DependentUpon>SettingsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\RemoveSongPage.xaml.cs">
+      <DependentUpon>RemoveSongPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ShowAllMusicsPage.xaml.cs">
+      <DependentUpon>ShowAllMusicsPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="sysdiagrams.cs">
       <DependentUpon>Music.tt</DependentUpon>
     </Compile>
@@ -120,7 +135,15 @@
     <Compile Include="users.cs">
       <DependentUpon>Music.tt</DependentUpon>
     </Compile>
-    <Page Include="Pages\GuestPage.xaml">
+    <Page Include="Pages\AddSongPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\AdminPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\AllMusicPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -145,6 +168,18 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\ProfilePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\SettingsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\RemoveSongPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ShowAllMusicsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -204,6 +239,7 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Images\play.png" />
     <Content Include="Music.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Music.edmx</DependentUpon>

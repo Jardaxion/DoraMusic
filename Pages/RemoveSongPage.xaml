@@ -1,0 +1,29 @@
+﻿<Window x:Class="MusicAppWPF.RemoveSongPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MusicAppWPF"
+        mc:Ignorable="d"
+        Title="RemoveSongPage" Height="450" Width="800">
+    <Grid Background="{StaticResource background}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="145*" />
+            <ColumnDefinition Width="502*" />
+            <ColumnDefinition Width="153*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="57*" />
+            <RowDefinition Height="377*" />
+        </Grid.RowDefinitions>
+        <Button Click="back_Click" x:Name="back" Content="Вернуться" Style="{StaticResource transperetButton}" />
+        <TextBlock Text="Удалить песню" Style="{StaticResource Text}" FontSize="24" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <StackPanel Grid.Row="1" Grid.Column="1">
+            <ComboBox x:Name="typeUser" BorderBrush="Pink" Background="White" Foreground="Black" Margin="0,0,0,10" SelectedIndex="0">
+                <ComboBoxItem BorderBrush="Pink" Background="White" Foreground="Black">1</ComboBoxItem>
+                <ComboBoxItem BorderBrush="Pink" Background="White" Foreground="Black">2</ComboBoxItem>
+            </ComboBox>
+            <Button x:Name="delete" Content="Удалить" Style="{StaticResource btn}" Height="25" />
+        </StackPanel>
+    </Grid>
+</Window>

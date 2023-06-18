@@ -15,20 +15,13 @@ using System.Windows.Shapes;
 namespace MusicAppWPF
 {
     /// <summary>
-    /// Логика взаимодействия для GuestPage.xaml
+    /// Логика взаимодействия для RemoveSongPage.xaml
     /// </summary>
-    public partial class GuestPage : Window
+    public partial class RemoveSongPage : Window
     {
-        public GuestPage()
+        public RemoveSongPage()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            MainWindow main = new MainWindow();
-            main.Show();
-            this.Close();
         }
     }
 }
