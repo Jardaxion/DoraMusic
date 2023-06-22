@@ -239,6 +239,8 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\pause.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="Music.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Music.edmx</DependentUpon>

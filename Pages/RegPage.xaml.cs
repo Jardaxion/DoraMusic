@@ -48,7 +48,7 @@ namespace MusicAppWPF
 
                         user.login = login.Text;
                         user.password = password.Password;
-                        user.type = typeUser.SelectedIndex + 1;
+                        user.type = 1;
                         context.users.Add(user);
                         context.SaveChanges();
 
@@ -60,7 +60,7 @@ namespace MusicAppWPF
                     }
                     else
                     {
-                        MessageBox.Show("Деибл, логин занят!!!");
+                        MessageBox.Show("Логин занят!!!");
                     }
                 }
             }

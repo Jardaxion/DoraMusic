@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -62,6 +63,8 @@ namespace MusicAppWPF
                     context.SaveChanges();
 
                     MessageBox.Show("Данные были успешно изменены");
+
+                    User.login = login.Text;
 
                     ProfilePage prof = new ProfilePage();
                     prof.Show();

@@ -10,6 +10,5 @@ namespace MusicAppWPF
     {
         public static string login;
         public static int id;
-        public static string playendMusic = "";
     }
 }

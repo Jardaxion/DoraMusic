@@ -22,6 +22,7 @@ namespace MusicAppWPF
         public ProfilePage()
         {
             InitializeComponent();
+            Hello.Text = "Добро пожаловать, ";
             Hello.Text += User.login;
         }
 
