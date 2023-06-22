@@ -38,11 +38,18 @@
     <ApplicationIcon>fav.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AxInterop.WMPLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\WMPLib.1.0.0\lib\AxInterop.WMPLib.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.WMPLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\WMPLib.1.0.0\lib\Interop.WMPLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -70,21 +77,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Pages\AddSongPage.xaml.cs">
-      <DependentUpon>AddSongPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="admin.cs">
-      <DependentUpon>Music.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\AdminPage.xaml.cs">
-      <DependentUpon>AdminPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\AllMusicPage.xaml.cs">
-      <DependentUpon>AllMusicPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="category.cs">
-      <DependentUpon>Music.tt</DependentUpon>
-    </Compile>
     <Compile Include="Music.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -103,14 +95,20 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Music.tt</DependentUpon>
     </Compile>
+    <Compile Include="Pages\AddSongPage.xaml.cs">
+      <DependentUpon>AddSongPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminPage.xaml.cs">
+      <DependentUpon>AdminPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AllMusicPage.xaml.cs">
+      <DependentUpon>AllMusicPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\RegPage.xaml.cs">
       <DependentUpon>RegPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="playlist.cs">
-      <DependentUpon>Music.tt</DependentUpon>
     </Compile>
     <Compile Include="Pages\ProfilePage.xaml.cs">
       <DependentUpon>ProfilePage.xaml</DependentUpon>
@@ -121,17 +119,16 @@
     <Compile Include="Pages\RemoveSongPage.xaml.cs">
       <DependentUpon>RemoveSongPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ShowAllMusicsPage.xaml.cs">
+    <Compile Include="Pages\ShowAllMusicsPage.xaml.cs">
       <DependentUpon>ShowAllMusicsPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Classes\User.cs" />
     <Compile Include="sysdiagrams.cs">
       <DependentUpon>Music.tt</DependentUpon>
     </Compile>
     <Compile Include="type.cs">
       <DependentUpon>Music.tt</DependentUpon>
     </Compile>
-    <Compile Include="Classes\User.cs" />
-    <Compile Include="Classes\UserJson.cs" />
     <Compile Include="users.cs">
       <DependentUpon>Music.tt</DependentUpon>
     </Compile>
@@ -179,7 +176,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ShowAllMusicsPage.xaml">
+    <Page Include="Pages\ShowAllMusicsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -206,7 +203,6 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Music.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="globalData.json" />
     <None Include="Music.edmx.diagram">
       <DependentUpon>Music.edmx</DependentUpon>
     </None>
@@ -240,6 +236,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\pause.png" />
     <Content Include="Music.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Music.edmx</DependentUpon>

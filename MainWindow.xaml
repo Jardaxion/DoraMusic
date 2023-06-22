@@ -41,16 +41,6 @@
                     Зарегистрироваться
                 </Button.Content>
             </Button>
-            <Button Style="{StaticResource btn}" x:Name="Guest" Height="25" Click="Guest_Click">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="12" />
-                    </Style>
-                </Button.Resources>
-                <Button.Content>
-                    Войти как гость
-                </Button.Content>
-            </Button>
         </StackPanel>
         <Image Width="25" Source="Images/helloKitty.png" Margin="316,77,171,51" Grid.Column="1" RenderTransformOrigin="0.5,0.5" >
             <Image.RenderTransform>

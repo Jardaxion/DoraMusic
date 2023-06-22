@@ -19,11 +19,10 @@
         <Button Click="back_Click" x:Name="back" Content="Вернуться" Style="{StaticResource transperetButton}" />
         <TextBlock Text="Удалить песню" Style="{StaticResource Text}" FontSize="24" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center"/>
         <StackPanel Grid.Row="1" Grid.Column="1">
-            <ComboBox x:Name="typeUser" BorderBrush="Pink" Background="White" Foreground="Black" Margin="0,0,0,10" SelectedIndex="0">
-                <ComboBoxItem BorderBrush="Pink" Background="White" Foreground="Black">1</ComboBoxItem>
-                <ComboBoxItem BorderBrush="Pink" Background="White" Foreground="Black">2</ComboBoxItem>
+            <ComboBox x:Name="songComboBox" BorderBrush="Pink" Background="White" Foreground="Black" Margin="0,0,0,10" SelectedIndex="0">
+
             </ComboBox>
-            <Button x:Name="delete" Content="Удалить" Style="{StaticResource btn}" Height="25" />
+            <Button x:Name="delete" Click="delete_Click"  Content="Удалить" Style="{StaticResource btn}" Height="25" />
         </StackPanel>
     </Grid>
 </Window>

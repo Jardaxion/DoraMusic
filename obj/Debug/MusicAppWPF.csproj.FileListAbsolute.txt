@@ -32,3 +32,92 @@ C:\lazarus\MusicAppWPF\obj\Debug\Pages\ProfilePage.baml
 C:\lazarus\MusicAppWPF\bin\Debug\Newtonsoft.Json.dll
 C:\lazarus\MusicAppWPF\bin\Debug\Newtonsoft.Json.xml
 C:\lazarus\MusicAppWPF\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Данил\Desktop\dora music\obj\Debug\MusicAppWPF.csproj.AssemblyReference.cache
+C:\Users\Данил\Desktop\dora music\obj\Debug\Pages\AddSongPage.g.cs
+C:\Users\Данил\Desktop\dora music\obj\Debug\Pages\AdminPage.g.cs
+C:\Users\Данил\Desktop\dora music\obj\Debug\Pages\AllMusicPage.g.cs
+C:\Users\Данил\Desktop\dora music\obj\Debug\MainWindow.g.cs
+C:\Users\Данил\Desktop\dora music\obj\Debug\Pages\LoginPage.g.cs
+C:\Users\Данил\Desktop\dora music\obj\Debug\Pages\RegPage.g.cs
+C:\Users\Данил\Desktop\dora music\obj\Debug\Pages\ProfilePage.g.cs
+C:\Users\Данил\Desktop\dora music\obj\Debug\Pages\SettingsPage.g.cs
+C:\Users\Данил\Desktop\dora music\obj\Debug\Pages\RemoveSongPage.g.cs
+C:\Users\Данил\Desktop\dora music\obj\Debug\Pages\ShowAllMusicsPage.g.cs
+C:\Users\Данил\Desktop\dora music\obj\Debug\App.g.cs
+C:\Users\Данил\Desktop\dora music\obj\Debug\Dora Music_Content.g.cs
+C:\Users\Данил\Desktop\dora music\obj\Debug\Dora Music_MarkupCompile.cache
+C:\Users\Данил\Desktop\dora music\obj\Debug\Dora Music_MarkupCompile.lref
+C:\Users\Данил\Desktop\dora music\obj\Debug\Dora Music.exe
+C:\Users\Данил\Desktop\dora music\obj\Debug\Dora Music.pdb
+C:\Users\Данил\Desktop\dora music\bin\Debug\Dora Music.exe.config
+C:\Users\Данил\Desktop\dora music\bin\Debug\Dora Music.exe
+C:\Users\Данил\Desktop\dora music\bin\Debug\Dora Music.pdb
+C:\Users\Данил\Desktop\dora music\bin\Debug\EntityFramework.dll
+C:\Users\Данил\Desktop\dora music\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Данил\Desktop\dora music\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Данил\Desktop\dora music\bin\Debug\EntityFramework.xml
+C:\Users\Данил\Desktop\dora music\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Данил\Desktop\dora music\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Данил\Desktop\dora music\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Данил\Desktop\dora music\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Данил\Desktop\dora music\obj\Debug\App.baml
+C:\Users\Данил\Desktop\dora music\obj\Debug\Pages\AddSongPage.baml
+C:\Users\Данил\Desktop\dora music\obj\Debug\Pages\AdminPage.baml
+C:\Users\Данил\Desktop\dora music\obj\Debug\Pages\AllMusicPage.baml
+C:\Users\Данил\Desktop\dora music\obj\Debug\MainWindow.baml
+C:\Users\Данил\Desktop\dora music\obj\Debug\Pages\LoginPage.baml
+C:\Users\Данил\Desktop\dora music\obj\Debug\Pages\RegPage.baml
+C:\Users\Данил\Desktop\dora music\obj\Debug\Pages\ProfilePage.baml
+C:\Users\Данил\Desktop\dora music\obj\Debug\Pages\SettingsPage.baml
+C:\Users\Данил\Desktop\dora music\obj\Debug\Pages\RemoveSongPage.baml
+C:\Users\Данил\Desktop\dora music\obj\Debug\Pages\ShowAllMusicsPage.baml
+C:\Users\Данил\Desktop\dora music\obj\Debug\Dora Music.g.resources
+C:\Users\Данил\Desktop\dora music\obj\Debug\MusicAppWPF.Properties.Resources.resources
+C:\Users\Данил\Desktop\dora music\obj\Debug\MusicAppWPF.csproj.GenerateResource.cache
+C:\Users\Данил\Desktop\dora music\obj\Debug\MusicAppWPF.csproj.CoreCompileInputs.cache
+C:\Users\Данил\Desktop\dora music\obj\Debug\MusicAppWPF.csproj.CopyComplete
+C:\Users\Данил\Desktop\doramusic\bin\Debug\Dora Music.exe.config
+C:\Users\Данил\Desktop\doramusic\bin\Debug\Dora Music.exe
+C:\Users\Данил\Desktop\doramusic\bin\Debug\Dora Music.pdb
+C:\Users\Данил\Desktop\doramusic\bin\Debug\EntityFramework.dll
+C:\Users\Данил\Desktop\doramusic\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Данил\Desktop\doramusic\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Данил\Desktop\doramusic\bin\Debug\EntityFramework.xml
+C:\Users\Данил\Desktop\doramusic\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Данил\Desktop\doramusic\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Данил\Desktop\doramusic\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Данил\Desktop\doramusic\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Данил\Desktop\doramusic\obj\Debug\MusicAppWPF.csproj.AssemblyReference.cache
+C:\Users\Данил\Desktop\doramusic\obj\Debug\Pages\AddSongPage.g.cs
+C:\Users\Данил\Desktop\doramusic\obj\Debug\Pages\AdminPage.g.cs
+C:\Users\Данил\Desktop\doramusic\obj\Debug\Pages\AllMusicPage.g.cs
+C:\Users\Данил\Desktop\doramusic\obj\Debug\MainWindow.g.cs
+C:\Users\Данил\Desktop\doramusic\obj\Debug\Pages\LoginPage.g.cs
+C:\Users\Данил\Desktop\doramusic\obj\Debug\Pages\RegPage.g.cs
+C:\Users\Данил\Desktop\doramusic\obj\Debug\Pages\ProfilePage.g.cs
+C:\Users\Данил\Desktop\doramusic\obj\Debug\Pages\SettingsPage.g.cs
+C:\Users\Данил\Desktop\doramusic\obj\Debug\Pages\RemoveSongPage.g.cs
+C:\Users\Данил\Desktop\doramusic\obj\Debug\Pages\ShowAllMusicsPage.g.cs
+C:\Users\Данил\Desktop\doramusic\obj\Debug\App.g.cs
+C:\Users\Данил\Desktop\doramusic\obj\Debug\Dora Music_Content.g.cs
+C:\Users\Данил\Desktop\doramusic\obj\Debug\Dora Music_MarkupCompile.cache
+C:\Users\Данил\Desktop\doramusic\obj\Debug\Dora Music_MarkupCompile.lref
+C:\Users\Данил\Desktop\doramusic\obj\Debug\App.baml
+C:\Users\Данил\Desktop\doramusic\obj\Debug\Pages\AddSongPage.baml
+C:\Users\Данил\Desktop\doramusic\obj\Debug\Pages\AdminPage.baml
+C:\Users\Данил\Desktop\doramusic\obj\Debug\Pages\AllMusicPage.baml
+C:\Users\Данил\Desktop\doramusic\obj\Debug\MainWindow.baml
+C:\Users\Данил\Desktop\doramusic\obj\Debug\Pages\LoginPage.baml
+C:\Users\Данил\Desktop\doramusic\obj\Debug\Pages\RegPage.baml
+C:\Users\Данил\Desktop\doramusic\obj\Debug\Pages\ProfilePage.baml
+C:\Users\Данил\Desktop\doramusic\obj\Debug\Pages\SettingsPage.baml
+C:\Users\Данил\Desktop\doramusic\obj\Debug\Pages\RemoveSongPage.baml
+C:\Users\Данил\Desktop\doramusic\obj\Debug\Pages\ShowAllMusicsPage.baml
+C:\Users\Данил\Desktop\doramusic\obj\Debug\Dora Music.g.resources
+C:\Users\Данил\Desktop\doramusic\obj\Debug\MusicAppWPF.Properties.Resources.resources
+C:\Users\Данил\Desktop\doramusic\obj\Debug\MusicAppWPF.csproj.GenerateResource.cache
+C:\Users\Данил\Desktop\doramusic\obj\Debug\MusicAppWPF.csproj.CoreCompileInputs.cache
+C:\Users\Данил\Desktop\doramusic\obj\Debug\MusicAppWPF.csproj.CopyComplete
+C:\Users\Данил\Desktop\doramusic\obj\Debug\Dora Music.exe
+C:\Users\Данил\Desktop\doramusic\obj\Debug\Dora Music.pdb
+C:\Users\Данил\Desktop\doramusic\bin\Debug\AxInterop.WMPLib.dll

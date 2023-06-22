@@ -15,10 +15,8 @@ namespace MusicAppWPF
     public partial class music
     {
         public int id { get; set; }
-        public Nullable<int> user_id { get; set; }
         public string path { get; set; }
-        public string category { get; set; }
-    
-        public virtual users users { get; set; }
+        public string name { get; set; }
+        public string author { get; set; }
     }
 }

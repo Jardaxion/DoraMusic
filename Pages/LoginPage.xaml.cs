@@ -30,24 +30,33 @@ namespace MusicAppWPF
             {
                 semyonMusicEntities context = new semyonMusicEntities();
                 bool valid = false;
+                int? type = 1;
                 using (context)
                 {
                     var usersArray = context.users;
                     foreach(users user in usersArray)
                     {
-                        if(user.login == login.Text && user.password == password.Password)
+                        if(user.login.TrimEnd() == login.Text && user.password.TrimEnd() == password.Password)
                         {
                             valid = true;
-
-                            User.login = user.login;
+                            
+                            User.login = user.login.TrimEnd();
                             User.id = user.id;
+                            type = user.type;
                         }
                     }
 
                     if (valid)
                     {
-                        ProfilePage profile = new ProfilePage();
-                        profile.Show();
+                        if(type == 1)
+                        {
+                            ProfilePage profile = new ProfilePage();
+                            profile.Show();
+                        } else
+                        {
+                            AdminPage page = new AdminPage();
+                            page.Show();
+                        }
                         this.Close();
                     } else
                     {

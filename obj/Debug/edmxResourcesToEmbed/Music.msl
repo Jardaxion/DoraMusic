@@ -1,44 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="Хранилище semyonMusicModelContainer" CdmEntityContainer="semyonMusicEntities">
-    <EntitySetMapping Name="admin">
-      <EntityTypeMapping TypeName="semyonMusicModel.admin">
-        <MappingFragment StoreEntitySet="admin">
-          <ScalarProperty Name="id" ColumnName="id" />
-          <ScalarProperty Name="login" ColumnName="login" />
-          <ScalarProperty Name="password" ColumnName="password" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="category">
-      <EntityTypeMapping TypeName="semyonMusicModel.category">
-        <MappingFragment StoreEntitySet="category">
-          <ScalarProperty Name="id" ColumnName="id" />
-          <ScalarProperty Name="category1" ColumnName="category" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
+  <EntityContainerMapping StorageEntityContainer="Хранилище doraModelContainer" CdmEntityContainer="semyonMusicEntities">
     <EntitySetMapping Name="music">
-      <EntityTypeMapping TypeName="semyonMusicModel.music">
+      <EntityTypeMapping TypeName="doraModel.music">
         <MappingFragment StoreEntitySet="music">
           <ScalarProperty Name="id" ColumnName="id" />
-          <ScalarProperty Name="user_id" ColumnName="user_id" />
           <ScalarProperty Name="path" ColumnName="path" />
-          <ScalarProperty Name="category" ColumnName="category" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="playlist">
-      <EntityTypeMapping TypeName="semyonMusicModel.playlist">
-        <MappingFragment StoreEntitySet="playlist">
-          <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="name" ColumnName="name" />
-          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="author" ColumnName="author" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="sysdiagrams">
-      <EntityTypeMapping TypeName="semyonMusicModel.sysdiagrams">
+      <EntityTypeMapping TypeName="doraModel.sysdiagrams">
         <MappingFragment StoreEntitySet="sysdiagrams">
           <ScalarProperty Name="name" ColumnName="name" />
           <ScalarProperty Name="principal_id" ColumnName="principal_id" />
@@ -49,7 +23,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="type">
-      <EntityTypeMapping TypeName="semyonMusicModel.type">
+      <EntityTypeMapping TypeName="doraModel.type">
         <MappingFragment StoreEntitySet="type">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="type1" ColumnName="type" />
@@ -57,7 +31,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="users">
-      <EntityTypeMapping TypeName="semyonMusicModel.users">
+      <EntityTypeMapping TypeName="doraModel.users">
         <MappingFragment StoreEntitySet="users">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="login" ColumnName="login" />

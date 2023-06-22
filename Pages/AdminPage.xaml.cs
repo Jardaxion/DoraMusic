@@ -24,19 +24,34 @@ namespace MusicAppWPF
             InitializeComponent();
         }
 
+        private void back_Click(object sender, RoutedEventArgs e)
+        {
+            User.id = 0;
+            User.login = "";
+            MainWindow page = new MainWindow();
+            page.Show();
+            this.Close();
+        }
+
         private void add_Click(object sender, RoutedEventArgs e)
         {
-
+            AddSongPage page = new AddSongPage();
+            page.Show();
+            this.Close();
         }
 
         private void remove_Click(object sender, RoutedEventArgs e)
         {
-
+            RemoveSongPage page = new RemoveSongPage();
+            page.Show();
+            this.Close();
         }
 
         private void showAll_Click(object sender, RoutedEventArgs e)
         {
-
+            ShowAllMusicsPage page = new ShowAllMusicsPage();
+            page.Show();
+            this.Close();
         }
     }
 }

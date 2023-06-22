@@ -45,12 +45,10 @@ namespace MusicAppWPF
                     if (valid)
                     {
                         users user = new users();
-                        int userId = (from us in context.users select us.id).Max();
 
-                        user.id = userId + 1;
                         user.login = login.Text;
                         user.password = password.Password;
-                        user.type = typeUser.SelectedIndex;
+                        user.type = typeUser.SelectedIndex + 1;
                         context.users.Add(user);
                         context.SaveChanges();
 

@@ -41,12 +41,5 @@ namespace MusicAppWPF
             reg.Show();
             this.Close();
         }
-
-        private void Guest_Click(object sender, RoutedEventArgs e)
-        {
-            GuestPage guest = new GuestPage();
-            guest.Show();
-            this.Close();
-        }
     }
 }

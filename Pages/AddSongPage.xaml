@@ -22,9 +22,9 @@
             <TextBlock Text="Название" Style="{StaticResource Text}" FontSize="16" Margin="0,0,0,5" />
             <TextBox Style="{StaticResource inputEffect}" Name="name" Height="25" Template="{StaticResource TextBoxTemp}" Margin="0,0,0,10" />
             <TextBlock Text="Автор" Style="{StaticResource Text}" FontSize="16" Margin="0,0,0,5" />
-            <PasswordBox Style="{StaticResource passEffect}" Name="author" Height="25" Template="{StaticResource PassBoxTemp}" Margin="0,0,0,10" />
-            <Button Style="{StaticResource btn}" Content="Добавить файл" Height="25" Margin="0,0,0,15" />
-            <Button Style="{StaticResource btn}" Content="Добавить песню" Height="25" />
+            <TextBox Style="{StaticResource inputEffect}" Name="author" Height="25" Template="{StaticResource TextBoxTemp}" Margin="0,0,0,10" />
+            <Button x:Name="addSong" Click="addSong_Click" Style="{StaticResource btn}" Content="Добавить файл" Height="25" Margin="0,0,0,15" />
+            <Button x:Name="submit" Click="submit_Click" Style="{StaticResource btn}" Content="Добавить песню" Height="25" />
         </StackPanel>
     </Grid>
 </Window>

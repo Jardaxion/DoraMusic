@@ -19,21 +19,29 @@
         <Button Click="back_Click" x:Name="back" Content="Вернуться" Style="{StaticResource transperetButton}" />
         <TextBlock Text="Вся музыка" Style="{StaticResource Text}" FontSize="24" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center"/>
         <ScrollViewer Grid.Row="1" Grid.Column="1">
-            <Grid Height="50" VerticalAlignment="Top" Margin="0,0,0,15">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="54*" />
-                    <ColumnDefinition Width="435*" />
-                    <ColumnDefinition Width="55*" />
-                </Grid.ColumnDefinitions>
-                <Button x:Name="play" Style="{StaticResource transperetButton}" >
-                    <Image Source="../Images/play.png" Height="40" Width="34" />
-                </Button>
-                <StackPanel Grid.Column="1">
-                    <TextBlock Text="Название" Style="{StaticResource Text}" FontSize="20" Margin="0,0,0,3" />
-                    <TextBlock Text="Автор" Style="{StaticResource Text}" FontSize="16" />
-                </StackPanel>
-                <TextBlock Grid.Column="2" Text="3:35" Style="{StaticResource Text}" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Height="22" Width="36"/>
-            </Grid>
+            <ItemsControl x:Name="songsWPF">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Height="50" VerticalAlignment="Top" Margin="0,0,0,15" Background="Pink">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="32*" />
+                                <ColumnDefinition Width="32*" />
+                                <ColumnDefinition Width="285*" />
+                            </Grid.ColumnDefinitions>
+                            <Button x:Name="play" Click="play_Click" Style="{StaticResource transperetButton}" Tag="{Binding file}">
+                                <Image Source="../Images/play.png" Height="40" Width="34" />
+                            </Button>
+                            <Button Grid.Column="1" x:Name="pause" Click="pause_Click" Style="{StaticResource transperetButton}" Tag="{Binding file}">
+                                <Image Source="../Images/pause.png" Height="40" Width="34" />
+                            </Button>
+                            <StackPanel Grid.Column="2">
+                                <TextBlock Text="{Binding name}" Style="{StaticResource Text}" FontSize="20" Margin="0,0,0,3" />
+                                <TextBlock Text="{Binding author}" Style="{StaticResource Text}" FontSize="16" />
+                            </StackPanel>
+                        </Grid>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
         </ScrollViewer>
     </Grid>
 </Window>

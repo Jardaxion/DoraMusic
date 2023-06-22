@@ -1,0 +1,42 @@
+﻿<Window x:Class="MusicAppWPF.ShowAllMusicsPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MusicAppWPF"
+        mc:Ignorable="d"
+        Title="ShowAllMusicsPage" Height="450" Width="800">
+    <Grid Background="{StaticResource background}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="145*" />
+            <ColumnDefinition Width="502*" />
+            <ColumnDefinition Width="153*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="57*" />
+            <RowDefinition Height="377*" />
+        </Grid.RowDefinitions>
+        <Button Click="back_Click"  x:Name="back" Content="Вернуться" Style="{StaticResource transperetButton}" />
+        <TextBlock Text="Вся музыка" Style="{StaticResource Text}" FontSize="24" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <DataGrid x:Name="songsGrid" Grid.Row="1" Grid.Column="1" Margin="0,0,0,23" ItemsSource="{Binding}" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn
+                    Header="ID"
+                    Binding="{Binding id,
+                    Mode=TwoWay}"/>
+                <DataGridTextColumn
+                    Header="Автор"
+                    Binding="{Binding author,
+                    Mode=TwoWay}"/>
+                <DataGridTextColumn
+                    Header="Название песни"
+                    Binding="{Binding name,
+                    Mode=TwoWay}"/>
+                <DataGridTextColumn
+                    Header="Название файла"
+                    Binding="{Binding path,
+                    Mode=TwoWay}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

@@ -25,10 +25,7 @@ namespace MusicAppWPF
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<admin> admin { get; set; }
-        public virtual DbSet<category> category { get; set; }
         public virtual DbSet<music> music { get; set; }
-        public virtual DbSet<playlist> playlist { get; set; }
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<type> type { get; set; }
         public virtual DbSet<users> users { get; set; }

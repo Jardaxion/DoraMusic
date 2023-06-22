@@ -39,5 +39,12 @@ namespace MusicAppWPF
             allMusicPage.Show();
             this.Close();
         }
+
+        private void setting_Click(object sender, RoutedEventArgs e)
+        {
+            SettingsPage set = new SettingsPage();
+            set.Show();
+            this.Close();
+        }
     }
 }

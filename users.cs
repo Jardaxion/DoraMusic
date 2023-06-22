@@ -14,22 +14,11 @@ namespace MusicAppWPF
     
     public partial class users
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public users()
-        {
-            this.music = new HashSet<music>();
-            this.playlist = new HashSet<playlist>();
-        }
-    
         public int id { get; set; }
         public string login { get; set; }
         public string password { get; set; }
         public Nullable<int> type { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<music> music { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<playlist> playlist { get; set; }
         public virtual type type1 { get; set; }
     }
 }

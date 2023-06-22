@@ -1,36 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="Хранилище semyonMusicModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-  <EntityType Name="admin">
-    <Key>
-      <PropertyRef Name="id" />
-    </Key>
-    <Property Name="id" Type="int" Nullable="false" />
-    <Property Name="login" Type="nvarchar" MaxLength="255" />
-    <Property Name="password" Type="nvarchar" MaxLength="255" />
-  </EntityType>
-  <EntityType Name="category">
-    <Key>
-      <PropertyRef Name="id" />
-    </Key>
-    <Property Name="id" Type="int" Nullable="false" />
-    <Property Name="category" Type="nvarchar" MaxLength="255" />
-  </EntityType>
+<Schema Namespace="Хранилище doraModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
   <EntityType Name="music">
     <Key>
       <PropertyRef Name="id" />
     </Key>
     <Property Name="id" Type="int" Nullable="false" />
-    <Property Name="user_id" Type="int" />
     <Property Name="path" Type="nvarchar" MaxLength="255" />
-    <Property Name="category" Type="nvarchar" MaxLength="255" />
-  </EntityType>
-  <EntityType Name="playlist">
-    <Key>
-      <PropertyRef Name="id" />
-    </Key>
-    <Property Name="id" Type="int" Nullable="false" />
     <Property Name="name" Type="nvarchar" MaxLength="255" />
-    <Property Name="user_id" Type="int" />
+    <Property Name="author" Type="nvarchar" MaxLength="255" />
   </EntityType>
   <EntityType Name="sysdiagrams">
     <Key>
@@ -54,35 +31,11 @@
       <PropertyRef Name="id" />
     </Key>
     <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="login" Type="nvarchar" MaxLength="255" />
-    <Property Name="password" Type="nvarchar" MaxLength="255" />
+    <Property Name="login" Type="nchar" MaxLength="256" />
+    <Property Name="password" Type="nchar" MaxLength="256" />
     <Property Name="type" Type="int" />
   </EntityType>
-  <Association Name="FK__music__user_id__300424B4">
-    <End Role="users" Type="Self.users" Multiplicity="0..1" />
-    <End Role="music" Type="Self.music" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="users">
-        <PropertyRef Name="id" />
-      </Principal>
-      <Dependent Role="music">
-        <PropertyRef Name="user_id" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__playlist__user_i__31EC6D26">
-    <End Role="users" Type="Self.users" Multiplicity="0..1" />
-    <End Role="playlist" Type="Self.playlist" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="users">
-        <PropertyRef Name="id" />
-      </Principal>
-      <Dependent Role="playlist">
-        <PropertyRef Name="user_id" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__users__type__2F10007B">
+  <Association Name="FK_users_type">
     <End Role="type" Type="Self.type" Multiplicity="0..1" />
     <End Role="users" Type="Self.users" Multiplicity="*" />
     <ReferentialConstraint>
@@ -94,23 +47,12 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="Хранилище semyonMusicModelContainer">
-    <EntitySet Name="admin" EntityType="Self.admin" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="category" EntityType="Self.category" Schema="dbo" store:Type="Tables" />
+  <EntityContainer Name="Хранилище doraModelContainer">
     <EntitySet Name="music" EntityType="Self.music" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="playlist" EntityType="Self.playlist" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="type" EntityType="Self.type" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="users" EntityType="Self.users" Schema="dbo" store:Type="Tables" />
-    <AssociationSet Name="FK__music__user_id__300424B4" Association="Self.FK__music__user_id__300424B4">
-      <End Role="users" EntitySet="users" />
-      <End Role="music" EntitySet="music" />
-    </AssociationSet>
-    <AssociationSet Name="FK__playlist__user_i__31EC6D26" Association="Self.FK__playlist__user_i__31EC6D26">
-      <End Role="users" EntitySet="users" />
-      <End Role="playlist" EntitySet="playlist" />
-    </AssociationSet>
-    <AssociationSet Name="FK__users__type__2F10007B" Association="Self.FK__users__type__2F10007B">
+    <AssociationSet Name="FK_users_type" Association="Self.FK_users_type">
       <End Role="type" EntitySet="type" />
       <End Role="users" EntitySet="users" />
     </AssociationSet>

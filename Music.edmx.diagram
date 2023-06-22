@@ -4,17 +4,12 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="c946a98d3b7b4eb29b58f726b5d0de86" Name="Diagram1">
-        <EntityTypeShape EntityType="semyonMusicModel.admin" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="semyonMusicModel.category" Width="1.5" PointX="2.75" PointY="6.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="semyonMusicModel.music" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="semyonMusicModel.playlist" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="semyonMusicModel.sysdiagrams" Width="1.5" PointX="4.75" PointY="6.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="semyonMusicModel.type" Width="1.5" PointX="0.75" PointY="2.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="semyonMusicModel.users" Width="1.5" PointX="3" PointY="2.125" IsExpanded="true" />
-        <AssociationConnector Association="semyonMusicModel.FK__music__user_id__300424B4" ManuallyRouted="false" />
-        <AssociationConnector Association="semyonMusicModel.FK__playlist__user_i__31EC6D26" ManuallyRouted="false" />
-        <AssociationConnector Association="semyonMusicModel.FK__users__type__2F10007B" ManuallyRouted="false" />
+      <Diagram DiagramId="9a123c3b81d2453fb8c19ce847626022" Name="Diagram1">
+        <EntityTypeShape EntityType="doraModel.music" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="doraModel.sysdiagrams" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="doraModel.type" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="doraModel.users" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
+        <AssociationConnector Association="doraModel.FK_users_type" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

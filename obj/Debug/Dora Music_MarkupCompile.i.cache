@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\deka-\Desktop\dora\obj\Debug\
+C:\Users\Данил\Desktop\doramusic\obj\Debug\
 MusicAppWPF
 none
 false
 DEBUG;TRACE
-C:\Users\deka-\Desktop\dora\App.xaml
-101839803815
-22135919089
-27-295683157
-191049788123
-Pages\AddSongPage.xaml;Pages\AdminPage.xaml;Pages\AllMusicPage.xaml;MainWindow.xaml;Pages\LoginPage.xaml;Pages\RegPage.xaml;Pages\ProfilePage.xaml;Pages\SettingsPage.xaml;Pages\RemoveSongPage.xaml;ShowAllMusicsPage.xaml;
+C:\Users\Данил\Desktop\doramusic\App.xaml
+10153030717
+2292022134
+23787942411
+21-262183888
+Pages\AddSongPage.xaml;Pages\AdminPage.xaml;Pages\AllMusicPage.xaml;MainWindow.xaml;Pages\LoginPage.xaml;Pages\RegPage.xaml;Pages\ProfilePage.xaml;Pages\SettingsPage.xaml;Pages\RemoveSongPage.xaml;Pages\ShowAllMusicsPage.xaml;
 
 True
 
