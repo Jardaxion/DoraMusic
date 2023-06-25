@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\lazarus\doramusic\obj\Debug\
+C:\Users\Данил\Desktop\a\obj\Debug\
 MusicAppWPF
 none
 false
 DEBUG;TRACE
-C:\lazarus\doramusic\App.xaml
+C:\Users\Данил\Desktop\a\App.xaml
 10153030717
 2292022134
 221630301778
-211960927517
+21588715044
 Pages\AddSongPage.xaml;Pages\AdminPage.xaml;Pages\AllMusicPage.xaml;MainWindow.xaml;Pages\LoginPage.xaml;Pages\RegPage.xaml;Pages\ProfilePage.xaml;Pages\SettingsPage.xaml;Pages\RemoveSongPage.xaml;Pages\ShowAllMusicsPage.xaml;
 
 False
